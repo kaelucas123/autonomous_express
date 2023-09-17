@@ -1,7 +1,9 @@
 package com.manager.autonomous_express.model;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Email;
 import lombok.*;
+import org.hibernate.validator.constraints.br.CPF;
 
 import java.io.Serializable;
 import java.util.UUID;
@@ -17,18 +19,19 @@ public class User implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    private UUID id;
+    private Long id;
 
     @Column(name = "name")
     private String name;
 
-    // TODO: Buscar a anotação que faz a verificação de Email, CPF e CEP
+    @CPF
     @Column(name = "cpf")
     private String cpf;
 
     @Column(name = "cep")
     private String cep;
 
+    @Email
     @Column(name = "email")
     private String email;
 
