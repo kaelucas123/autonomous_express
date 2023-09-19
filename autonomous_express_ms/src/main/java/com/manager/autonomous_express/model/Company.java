@@ -10,6 +10,7 @@ import java.util.UUID;
 @Table(name = "company")
 @Getter
 @Setter
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class Company implements Serializable {

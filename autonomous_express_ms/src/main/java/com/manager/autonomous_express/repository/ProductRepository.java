@@ -1,11 +1,9 @@
 package com.manager.autonomous_express.repository;
 
-import com.manager.autonomous_express.model.User;
+import com.manager.autonomous_express.model.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.UUID;
-
 @Repository
-public interface UserRepository extends JpaRepository<User, UUID> {
+public interface ProductRepository extends JpaRepository<Product, Long> {
 }

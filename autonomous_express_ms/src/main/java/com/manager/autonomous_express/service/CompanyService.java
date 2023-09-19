@@ -1,5 +1,6 @@
 package com.manager.autonomous_express.service;
 
+import com.manager.autonomous_express.api.request.CompanyRequest;
 import com.manager.autonomous_express.api.response.CompanyResponse;
 import com.manager.autonomous_express.model.Company;
 import com.manager.autonomous_express.repository.CompanyRepository;
@@ -31,5 +32,17 @@ public class CompanyService {
         }
         return new CompanyResponse(company.get());
     }
+    public CompanyResponse save(CompanyRequest request){
+        log.info("Saving company");
 
+        Company company = Company.builder()
+                .name(request.getName())
+                .cnpj(request.getCnpj())
+                .logisticsCenterAddress(request.getLogisticsCenterAddress())
+                .build();
+
+        this.companyRepository.save(company);
+        return new CompanyResponse(company); 
+
+}
 }
