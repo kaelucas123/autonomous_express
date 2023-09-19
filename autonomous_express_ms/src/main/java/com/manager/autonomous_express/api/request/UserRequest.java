@@ -1,15 +1,18 @@
 package com.manager.autonomous_express.api.request;
 
 import jakarta.validation.constraints.NotBlank;
+import lombok.Getter;
 
-public record UserRequest(
-        @NotBlank
-        String name,
-        @NotBlank
-        String cpf,
-        @NotBlank
-        String email,
-        String cep,
-        String address
-) {
+@Getter
+public class UserRequest {
+    @NotBlank
+    private String name;
+    @NotBlank
+    private String cpf;
+    @NotBlank
+    private String email;
+    @NotBlank
+    private String cep;
+    @NotBlank
+    private String address;
 }

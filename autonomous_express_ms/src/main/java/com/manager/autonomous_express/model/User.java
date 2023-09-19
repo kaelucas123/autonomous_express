@@ -12,6 +12,7 @@ import java.util.UUID;
 @Table(name = "user")
 @Getter
 @Setter
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class User implements Serializable {
@@ -41,5 +42,4 @@ public class User implements Serializable {
     @ManyToOne
     @JoinColumn(name = "product_id")
     private Product product;
-
 }
