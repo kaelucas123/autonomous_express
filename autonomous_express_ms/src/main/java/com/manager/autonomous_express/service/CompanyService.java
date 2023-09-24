@@ -1,5 +1,6 @@
 package com.manager.autonomous_express.service;
 
+import com.manager.autonomous_express.api.request.CompanyRequest;
 import com.manager.autonomous_express.api.response.CompanyResponse;
 import com.manager.autonomous_express.model.Company;
 import com.manager.autonomous_express.repository.CompanyRepository;
