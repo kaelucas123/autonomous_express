@@ -21,7 +21,7 @@ public class CompanyService {
 
     //TODO: Procurar exceção correta para objeto não encontrado
     public List<CompanyResponse> findAll() {
-        log.info("Looking for all companie");
+        log.info("Looking for all companies");
         return companyRepository.findAll().stream().map(CompanyResponse::new).collect(Collectors.toList());
     }
 
@@ -32,6 +32,7 @@ public class CompanyService {
         }
         return new CompanyResponse(company.get());
     }
+
     public CompanyResponse save(CompanyRequest request){
         log.info("Saving company");
 
@@ -42,7 +43,7 @@ public class CompanyService {
                 .build();
 
         this.companyRepository.save(company);
-        return new CompanyResponse(company); 
+        return new CompanyResponse(company);
 
 }
 }

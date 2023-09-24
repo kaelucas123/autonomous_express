@@ -37,7 +37,7 @@ public class Delivery {
     @JoinColumn(name = "company_id")
     private Company company;
 
-    @OneToOne(orphanRemoval = true)
+    @ManyToOne
     @JoinColumn(name = "vehicle_id")
     private Vehicle vehicle;
 

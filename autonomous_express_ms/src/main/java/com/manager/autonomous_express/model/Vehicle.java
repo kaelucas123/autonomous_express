@@ -8,6 +8,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDate;
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 @Entity
 @Table(name = "vehicle")
@@ -33,7 +35,10 @@ public class Vehicle {
     @Column(name = "status")
     private VehicleStatus status;
 
-    @OneToOne(mappedBy = "vehicle", orphanRemoval = true)
-    private Delivery delivery;
+    @Column(name = "car_license_plate")
+    private String carLicensePlate;
+
+    @OneToMany(mappedBy = "vehicle", cascade = CascadeType.REMOVE, orphanRemoval = true)
+    private Set<Delivery> deliveries = new LinkedHashSet<>();
 
 }
