@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.context.request.async.DeferredResult;
 
 import java.util.List;
+import java.util.UUID;
 
 @RestController
 @RequestMapping("/user")
@@ -28,7 +29,7 @@ public class UserResource {
     }
 
     @GetMapping("/{id}")
-    public DeferredResult<ResponseEntity<UserResponse>> findById(@PathVariable Long id){
+    public DeferredResult<ResponseEntity<UserResponse>> findById(@PathVariable UUID id){
         DeferredResult<ResponseEntity<UserResponse>> dr = new DeferredResult<>();
         dr.setResult(ResponseEntity.ok(userService.findById(id)));
         return dr;

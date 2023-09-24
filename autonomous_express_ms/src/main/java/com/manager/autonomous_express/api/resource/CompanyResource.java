@@ -31,6 +31,7 @@ public class CompanyResource {
         dr.setResult(ResponseEntity.ok().body(companyService.findById(id)));
         return dr;
     }
+
     @PostMapping("/save")
     public DeferredResult<ResponseEntity<CompanyResponse>> save(@Valid @RequestBody CompanyRequest request){
         DeferredResult<ResponseEntity<CompanyResponse>> dr = new DeferredResult<>();
