@@ -21,7 +21,7 @@ public class CompanyService {
 
     //TODO: Procurar exceção correta para objeto não encontrado
     public List<CompanyResponse> findAll() {
-        log.info("Looking for all companie");
+        log.info("Looking for all companies");
         return companyRepository.findAll().stream().map(CompanyResponse::new).collect(Collectors.toList());
     }
 
