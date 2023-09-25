@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="94b13adc-ee9c-4584-8f37-055826d70e29" name="Changes" comment="Looking for all companies -&gt; Looking for all companie" />
+    <list default="true" id="94b13adc-ee9c-4584-8f37-055826d70e29" name="Changes" comment="Looking for all companies -&gt; Looking for all companie">
+      <change beforePath="$PROJECT_DIR$/.idea/autonomous_express.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/autonomous_express.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autonomous_express_ms/src/main/java/com/manager/autonomous_express/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/autonomous_express_ms/src/main/java/com/manager/autonomous_express/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autonomous_express_ms/src/main/java/com/manager/autonomous_express/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/autonomous_express_ms/src/main/java/com/manager/autonomous_express/service/UserService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,9 +24,16 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="main" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2Vc6GxNjIqqg6y8tcwSALlnqUvy" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -31,7 +44,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/tmdan/OneDrive/Área de Trabalho/autonomous_express-main/autonomous_express",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/project/autonomous_express",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "spring.configuration.checksum": "66ab73f597edd07d09486a5241f57130",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -54,6 +73,8 @@
       <option name="presentableId" value="Default" />
       <updated>1695122930639</updated>
       <workItem from="1695122931608" duration="219000" />
+      <workItem from="1695124211176" duration="1163000" />
+      <workItem from="1695640719154" duration="398000" />
     </task>
     <task id="LOCAL-00001" summary="Looking for all companies -&gt; Looking for all companie">
       <option name="closed" value="true" />

@@ -38,6 +38,11 @@ public class UserService {
 
     public UserResponse save(UserRequest request){
         log.info("Saving user");
+        Optional<User> userO = userRepository.findByCpf(request.getCpf());
+        if (userO.isPresent()){
+            throw new RuntimeException();
+        }
+
         User user = User.builder()
                 .name(request.getName())
                 .cpf(request.getCpf())
