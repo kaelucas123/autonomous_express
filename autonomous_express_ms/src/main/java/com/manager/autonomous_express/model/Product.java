@@ -2,10 +2,7 @@ package com.manager.autonomous_express.model;
 
 import com.manager.autonomous_express.model.enums.ProductStatus;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.io.Serializable;
 import java.util.LinkedHashSet;
@@ -16,6 +13,7 @@ import java.util.UUID;
 @Table(name = "product")
 @Getter
 @Setter
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class Product implements Serializable {
