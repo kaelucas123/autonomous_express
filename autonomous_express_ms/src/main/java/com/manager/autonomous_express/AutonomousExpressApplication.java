@@ -9,5 +9,4 @@ public class AutonomousExpressApplication {
     public static void main(String[] args) {
         SpringApplication.run(AutonomousExpressApplication.class, args);
     }
-
 }

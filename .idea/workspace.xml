@@ -4,17 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="94b13adc-ee9c-4584-8f37-055826d70e29" name="Changes" comment="Looking for all companies -&gt; Looking for all companie">
-      <change beforePath="$PROJECT_DIR$/.idea/autonomous_express.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/autonomous_express.iml" afterDir="false" />
+    <list default="true" id="94b13adc-ee9c-4584-8f37-055826d70e29" name="Changes" comment="Vehicle and Company entities update">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autonomous_express_ms/src/main/java/com/manager/autonomous_express/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/autonomous_express_ms/src/main/java/com/manager/autonomous_express/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autonomous_express_ms/src/main/java/com/manager/autonomous_express/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/autonomous_express_ms/src/main/java/com/manager/autonomous_express/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autonomous_express_ms/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/autonomous_express_ms/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autonomous_express_ms/src/main/java/com/manager/autonomous_express/api/resource/CompanyResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/autonomous_express_ms/src/main/java/com/manager/autonomous_express/api/resource/CompanyResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autonomous_express_ms/src/main/java/com/manager/autonomous_express/model/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/autonomous_express_ms/src/main/java/com/manager/autonomous_express/model/Vehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autonomous_express_ms/src/main/java/com/manager/autonomous_express/repository/VehicleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/autonomous_express_ms/src/main/java/com/manager/autonomous_express/repository/VehicleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autonomous_express_ms/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/autonomous_express_ms/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -24,23 +35,30 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubProjectSettings">
-    <option name="branchProtectionPatterns">
-      <list>
-        <option value="main" />
-      </list>
-    </option>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="2Vc6GxNjIqqg6y8tcwSALlnqUvy" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -50,6 +68,10 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "spring.configuration.checksum": "66ab73f597edd07d09486a5241f57130",
     "vue.rearranger.settings.migration": "true"
   }
@@ -75,6 +97,11 @@
       <workItem from="1695122931608" duration="219000" />
       <workItem from="1695124211176" duration="1163000" />
       <workItem from="1695640719154" duration="398000" />
+      <workItem from="1695853856549" duration="646000" />
+      <workItem from="1695861110273" duration="24000" />
+      <workItem from="1695903166771" duration="3167000" />
+      <workItem from="1696093449319" duration="390000" />
+      <workItem from="1696095131257" duration="3171000" />
     </task>
     <task id="LOCAL-00001" summary="Looking for all companies -&gt; Looking for all companie">
       <option name="closed" value="true" />
@@ -93,5 +120,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Looking for all companies -&gt; Looking for all companie" />
     <option name="LAST_COMMIT_MESSAGE" value="Looking for all companies -&gt; Looking for all companie" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/autonomous_express_ms/src/main/java/com/manager/autonomous_express/service/VehicleService.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

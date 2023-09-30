@@ -2,14 +2,11 @@ package com.manager.autonomous_express.api.resource;
 
 import com.manager.autonomous_express.api.request.CompanyRequest;
 import com.manager.autonomous_express.api.response.CompanyResponse;
-import com.manager.autonomous_express.api.response.UserResponse;
 import com.manager.autonomous_express.service.CompanyService;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.context.request.async.DeferredResult;
-
-import java.lang.annotation.Repeatable;
 import java.util.List;
 import java.util.UUID;
 

@@ -2,17 +2,16 @@ package com.manager.autonomous_express.model;
 
 import com.manager.autonomous_express.model.enums.VehicleStatus;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.time.LocalDate;
+import java.util.Date;
 
 @Entity
 @Table(name = "vehicle")
 @Getter
 @Setter
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class Vehicle {
@@ -23,6 +22,9 @@ public class Vehicle {
 
     @Column(name = "first_use")
     private LocalDate firstUse;
+
+    @Column(name = "plate")
+    private String plate;
 
     @Column(name = "last_maintenance")
     private LocalDate lastMaintenance;
