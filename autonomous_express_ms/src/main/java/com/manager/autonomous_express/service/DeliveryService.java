@@ -6,6 +6,7 @@ import com.manager.autonomous_express.model.Delivery;
 import com.manager.autonomous_express.model.Product;
 import com.manager.autonomous_express.model.User;
 import com.manager.autonomous_express.repository.DeliveryRepository;
+import com.manager.autonomous_express.repository.UserRepository;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -19,6 +20,7 @@ import java.util.stream.Collectors;
 @AllArgsConstructor
 public class DeliveryService {
     private DeliveryRepository deliveryRepository;
+    private UserRepository userRepository;
 
     public List<DeliveryResponse> findAll() {
         log.info("Looking for all products");
@@ -34,9 +36,14 @@ public class DeliveryService {
     }
     public DeliveryResponse save(DeliveryRequest request){
         log.info("Saving delivery");
+        Optional<User> userO = userRepository.findByCpf(request.getUserCPF());
+
+        if(userO.isEmpty()){
+            return null;
+        }
 
         Delivery delivery = Delivery.builder()
-                .user(new User(request.getUser()))
+                .user(userO.get())
                 .products(request.getProducts().stream().map(Product::new).collect(Collectors.toSet()))
                 .build();
 

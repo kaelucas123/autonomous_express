@@ -6,11 +6,14 @@ import lombok.Getter;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import java.util.UUID;
+
 @AllArgsConstructor
 @Getter
 public class DeliveryRequest {
     @NotNull
-    private UserRequest user;
+    private String userCPF;
+
     @NotNull
     private final Set<ProductRequest> products = new LinkedHashSet<>();
 }
