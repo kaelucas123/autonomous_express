@@ -10,11 +10,9 @@ import lombok.Setter;
 @AllArgsConstructor
 public class ProductResponse {
     private String name;
-    private String description;
 
     public ProductResponse(Product product){
         this.name = product.getName();
-        this.description = product.getDescription();
     }
 
 }

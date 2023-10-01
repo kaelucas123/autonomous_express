@@ -34,7 +34,6 @@ public class ProductService {
 
         Product product = Product.builder()
                 .name(request.getName())
-                .description(request.getDescription())
                 .build();
 
         this.productRepository.save(product);

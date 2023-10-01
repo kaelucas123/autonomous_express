@@ -1,24 +1,25 @@
 package com.manager.autonomous_express.model;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.time.LocalDate;
+import java.util.LinkedHashSet;
+import java.util.Set;
+import java.util.UUID;
 
 @Entity
 @Table(name = "delivery")
 @Getter
 @Setter
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class Delivery {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private UUID id;
 
     @Column(name = "starting_date")
     private LocalDate startingDate;
@@ -40,5 +41,8 @@ public class Delivery {
     @OneToOne(orphanRemoval = true)
     @JoinColumn(name = "vehicle_id")
     private Vehicle vehicle;
+
+    @OneToMany(mappedBy = "delivery", orphanRemoval = true)
+    private Set<Product> products = new LinkedHashSet<>();
 
 }

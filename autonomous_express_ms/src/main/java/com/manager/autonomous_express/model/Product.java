@@ -1,10 +1,12 @@
 package com.manager.autonomous_express.model;
 
+import com.manager.autonomous_express.api.request.ProductRequest;
 import com.manager.autonomous_express.model.enums.ProductStatus;
 import jakarta.persistence.*;
 import lombok.*;
 
 import java.io.Serializable;
+import java.time.LocalDateTime;
 import java.util.LinkedHashSet;
 import java.util.Set;
 import java.util.UUID;
@@ -26,9 +28,6 @@ public class Product implements Serializable {
     @Column(name = "name")
     private String name;
 
-    @Column(name = "description")
-    private String description;
-
     @OneToOne(orphanRemoval = true)
     @JoinColumn(name = "company_id")
     private Company company;
@@ -39,4 +38,21 @@ public class Product implements Serializable {
     @OneToOne(orphanRemoval = true)
     @JoinColumn(name = "user_id")
     private User user;
+
+    @Column(name = "pending_logistic_center_date")
+    private LocalDateTime pendingLogisticCenterDate;
+
+    @Column(name = "in_transit_date")
+    private LocalDateTime inTransitDate;
+
+    @Column(name = "delivered_date")
+    private LocalDateTime deliveredDate;
+
+    @ManyToOne
+    @JoinColumn(name = "delivery_id")
+    private Delivery delivery;
+
+    public Product(ProductRequest request){
+        this.name = request.getName();
+    }
 }

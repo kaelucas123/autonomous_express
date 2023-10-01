@@ -7,6 +7,4 @@ import lombok.Getter;
 public class ProductRequest {
     @NotBlank
     private String name;
-    @NotBlank
-    private String description;
 }

@@ -1,5 +1,6 @@
 package com.manager.autonomous_express.model;
 
+import com.manager.autonomous_express.api.request.UserRequest;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import lombok.*;
@@ -42,4 +43,12 @@ public class User implements Serializable {
     @ManyToOne
     @JoinColumn(name = "product_id")
     private Product product;
+
+    public User(UserRequest request) {
+        this.name = request.getName();
+        this.cpf = request.getCpf();
+        this.cep = request.getCep();
+        this.email = request.getEmail();
+        this.address = request.getAddress();
+    }
 }
