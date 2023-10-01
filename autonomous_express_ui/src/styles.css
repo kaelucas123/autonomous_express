@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,400;0,600;1,500&display=swap');
+
+* {
+  margin: 0;
+  border: 0;
+  text-decoration: none;
+  font-family: 'Roboto Mono', monospace;
+  /*font-size: 1.2rem;*/
+  color: white;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 16px;
+}
