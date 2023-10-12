@@ -1,21 +1,17 @@
-@import 'bootstrap/dist/css/bootstrap.min.css';
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,400;0,600;1,500&display=swap');
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 7 | @use '@angular/material' as mat;
+ *   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   styles.scss 7:1  root stylesheet */
 
-* {
-  margin: 0;
-  border: 0;
-  text-decoration: none;
-  font-family: 'Roboto Mono', monospace;
-  /*font-size: 1.2rem;*/
-  color: white;
-}
-
-html, body {
-  height: 100%;
-}
-
-body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-  font-size: 16px;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 7 \2502  @use '@angular/material' as mat;\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   styles.scss 7:1  root stylesheet";
 }

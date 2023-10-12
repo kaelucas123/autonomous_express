@@ -1,0 +1,49 @@
+.img-banner{
+  background-image: url("../../../assets/background.jpg");
+  background-position-y: -100px;
+  position: relative;
+  height: 45rem;
+}
+.img-banner::after{
+  content: "";
+  position: absolute;
+  inset:0;
+  opacity: 0.15;
+  background-blend-mode: overlay;
+  z-index: -1;
+  background-size: cover;
+}
+.left-section{
+  background: linear-gradient(rgba(173, 83, 137, 0), var(--custom-dark-blue));
+}
+.img1{
+  width: min(90%, 900px);
+  margin-left: 35px;
+  height: auto;
+}
+.text-area{
+  padding: max(4vh, 1rem);
+  overflow-y: auto;
+}
+.text-area div{
+  max-width: 200px;
+}
+.rectangle{
+  height: 80%;
+  width: auto;
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  right: 0;
+}
+.rectangle img{
+  width: auto;
+  z-index: -1;
+  height: auto;
+}
+.highlight1{
+  color: var(--custom-bright-blue);
+}
+i{
+  color: var(--custom-orange);
+}

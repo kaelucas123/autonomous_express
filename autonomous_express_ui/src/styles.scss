@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital@1&display=swap');
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+:root {
+  --custom-dark-blue: #16141B;
+  --custom-orange: #FC4867;
+  --custom-bright-blue: #5EECE3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+  font-weight: lighter;
+}
+
+.logo {
+  width: 5rem;
+}
+
+b {
+  color: var(--custom-orange);
+}
+
+h1 {
+  font-family: 'Anonymous Pro', monospace;
+}
+
+body {
+  background-color: var(--custom-dark-blue);
+  color: #FFFF;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.content {
+  width: min(95%, 1600px);
+  margin-inline: auto;
+  height: auto;
+  position: relative;
+  isolation: isolate;
+}
+
+.noise {
+  position: relative;
+  overflow: hidden;
+}
+
+.noise::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.15;
+  background-blend-mode: overlay;
+  z-index: -1;
+  background-size: cover;
+  background-image: url("assets/noise.png");
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Oswald, "Helvetica Neue", sans-serif;
+}
+
+textarea {
+  resize: none;
+  outline: none;
+  border: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--custom-bright-blue);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--custom-orange);
+}
