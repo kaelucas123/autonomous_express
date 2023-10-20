@@ -6,21 +6,30 @@ import { AppComponent } from './app.component';
 import { LandingPageComponent } from './routes/landing-page/landing-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from "@angular/material/button";
-import { LoginScreenComponent } from './routes/login-screen/login-screen.component';
 import {NgOptimizedImage} from "@angular/common";
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatIconModule} from "@angular/material/icon";
 import {MatListModule} from "@angular/material/list";
 import { MenuComponent } from './components/menu/menu.component';
+import {MatInputModule} from "@angular/material/input";
+import {ReactiveFormsModule} from "@angular/forms";
+import {LoginScreenComponent} from "./routes/login-screen/login-screen.component";
+import { ManagementComponent } from './routes/management/management.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { ListComponent } from './components/list/list.component';
+import {MatTableModule} from "@angular/material/table";
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
-    LoginScreenComponent,
     MenuComponent,
+    LoginScreenComponent,
+    ManagementComponent,
+    SidebarComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +40,10 @@ import { MenuComponent } from './components/menu/menu.component';
     MatSidenavModule,
     MatToolbarModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatInputModule,
+    ReactiveFormsModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
