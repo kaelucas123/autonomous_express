@@ -31,4 +31,7 @@ public class Company implements Serializable {
 
     @Column(name = "logistics_center_address")
     private String logisticsCenterAddress;
+
+    @Column(name = "email")
+    private String email;
 }
