@@ -53,3 +53,12 @@ ul{
 li a{
   text-decoration: none;
 }
+.login-button{
+  transition: 0.3s all;
+  outline: none;
+  &:hover{
+    background-color: #FC4867;
+    color: white;
+  }
+}
+
