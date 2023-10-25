@@ -1,0 +1,23 @@
+<div class="wrapper">
+    <section class="img-banner d-flex align-items-center justify-content-around">
+      <div class="col position-absolute fixed-top mt-3">
+        <a routerLink="/home"><img class="logo" src="assets/logo.png" alt="logo"></a>
+      </div>
+      <div class="container tracker-form p-5">
+        <div class="row">
+          <div class="col d-flex flex-column justify-content-around">
+            <h1>Acompanhe sua entrega!</h1>
+            Bem-vindo ao nosso sistema de acompanhamento de entrega.
+            Digite seu codigo de entrega!
+            <form class="mt-5">
+              <mat-form-field class="tracker-form w-100">
+                <input type="id_entrega"
+                       placeholder="Ex. 40028922AU">
+              </mat-form-field>
+            </form>
+            <button mat-raised-button class="mt-5 tracker-button" color="primary" routerLink="/home">Buscar detalhes</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    

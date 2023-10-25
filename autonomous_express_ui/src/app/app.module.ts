@@ -19,6 +19,7 @@ import { ManagementComponent } from './routes/management/management.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { ListComponent } from './components/list/list.component';
 import {MatTableModule} from "@angular/material/table";
+import { TrackerComponent } from './components/tracker/tracker.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import {MatTableModule} from "@angular/material/table";
     LoginScreenComponent,
     ManagementComponent,
     SidebarComponent,
-    ListComponent
+    ListComponent,
+    TrackerComponent
   ],
   imports: [
     BrowserModule,
