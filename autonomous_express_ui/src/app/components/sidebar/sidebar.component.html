@@ -1,14 +1,12 @@
 <div class="conteudo">
-  <div class="container-fluid">
-    <div>
-      <div>
-        <a><img class="logo mt-2 mb-2" src="assets/logo.png" alt="logo"></a>
-      </div>
+  <div class="container-fluid position-relative">
+    <div class="d-flex align-items-center justify-content-around mb-4">
+      <a><img class="logo mt-3 mb-2" src="assets/logo.png" alt="logo"></a>
     </div>
     <!--    =============================== botões ===============================-->
     <div class="row">
       <div class="col d-flex align-items-center justify-content-around">
-        <button mat-button class="custom-button">
+        <button mat-raised-button class="custom-button" color="white">
           <mat-icon color="warn">list</mat-icon>
           <mat-label>Lista</mat-label>
         </button>
@@ -16,11 +14,19 @@
     </div>
     <div class="row">
       <div class="col d-flex align-items-center justify-content-around">
-        <button mat-button class="custom-button">
-          <mat-icon color="warn">list</mat-icon>
-          <mat-label>Lista</mat-label>
+        <button mat-raised-button class="custom-button" color="white">
+          <mat-icon color="warn">graphic_eq</mat-icon>
+          <mat-label>Estatisticas</mat-label>
         </button>
       </div>
+    </div>
+      <div class="col d-flex align-items-center justify-content-around exit-button">
+        <button mat-raised-button color="white">
+          <mat-icon color="warn">graphic_eq</mat-icon>
+          <mat-label>Sair</mat-label>
+        </button>
+      </div>
+    <div class="row">
     </div>
     <!--    =============================== botões ===============================-->
   </div>
