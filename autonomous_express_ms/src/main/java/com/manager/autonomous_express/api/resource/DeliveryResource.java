@@ -30,7 +30,7 @@ public class DeliveryResource {
         dr.setResult(ResponseEntity.ok().body(deliveryService.findById(id)));
         return dr;
     }
-    @PostMapping()
+    @PostMapping("/save")
     public DeferredResult<ResponseEntity<DeliveryResponse>> save(@Valid @RequestBody DeliveryRequest request){
         DeferredResult<ResponseEntity<DeliveryResponse>> dr = new DeferredResult<>();
         dr.setResult(ResponseEntity.ok().body(deliveryService.save(request)));
