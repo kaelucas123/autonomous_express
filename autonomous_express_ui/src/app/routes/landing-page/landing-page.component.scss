@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+
+
 .img-banner{
   background-image: url("../../../assets/background.jpg");
   background-position-y: -100px;
@@ -62,3 +65,36 @@ li a{
   }
 }
 
+.serviço{
+
+}
+  .serviço h4{
+    color: #FFF;
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3.8px;
+  }
+  .serviço p{
+    color: #FFF;
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+  }
+  .serviço h2{
+    color: #FFF;
+    text-align: center;
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 6.08px;
+  }
+  .serviço br{
+    line-height: 60px;
+  }
