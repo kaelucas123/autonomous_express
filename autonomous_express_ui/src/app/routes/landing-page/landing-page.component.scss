@@ -1,3 +1,4 @@
+
 .img-banner{
   background-image: url("../../../assets/background.jpg");
   background-position-y: -100px;
@@ -62,3 +63,73 @@ li a{
   }
 }
 
+.serviço{
+}
+  .serviço h4{
+    color: #FFF;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3.8px;
+  }
+  .serviço p{
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+  }
+  .serviço h2{
+    color: #FFF;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 6.08px;
+  }
+  .serviço br{
+    line-height: 60px;
+  }
+  .serviço img{
+    height: 5px;
+  }
+  .serviço span{
+    color: #FC4867;
+  }
+
+.serviço_container{
+  margin-top: 25px;
+  background: hsl(256, 14%, 15%);
+  margin-bottom: 45px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.underline{
+  height: 5px; 
+}
+.devs{
+
+}
+  .devs h2{
+    color: #FFF;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3px;
+  }
+.devs_container{
+  background: hsl(256, 14%, 15%);
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.devs_container2{
+  background: hsl(256, 14%, 15%);
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
