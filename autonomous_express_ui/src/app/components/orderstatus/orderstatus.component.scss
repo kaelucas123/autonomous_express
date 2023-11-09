@@ -1,0 +1,27 @@
+.img-banner{
+    background-image: url("../../../assets/background.jpg");
+    background-position-y: -100px;
+    position: relative;
+    height: 100vh;
+  }
+  .img-banner::after{
+    content: "";
+    position: absolute;
+    inset:0;
+    opacity: 0.15;
+    background-blend-mode: overlay;
+    z-index: -1;
+    background-size: cover;
+  }
+  .status-form{
+    width: min(90%, 400px);
+    background: linear-gradient(rgba(173, 83, 137, 0), var(--custom-dark-blue));
+  }
+  .status-button{
+    transition: 0.3s all;
+    outline: none;
+    &:hover{
+      background-color: #FC4867;
+      color: white;
+    }
+  }
