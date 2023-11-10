@@ -155,9 +155,7 @@ li a{
   margin-top: 10px;
 }
 
-.atendimento{
-
-}
+.atendimento{}
   .atendimento h2{
     color: #FFF;
     text-align: center;
@@ -172,3 +170,31 @@ li a{
   margin-top: 25px;
   background: hsl(256, 14%, 15%);
 }
+
+
+.footer{
+  margin-top: 30px;
+  background-color: #918f8f;
+}
+  .footer h4{
+    font-size: 19px;
+    color: #D61D1D;
+    font-style: normal;
+    line-height: normal;
+  }
+
+  .footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-style: normal;
+    line-height: normal;
+  }
+
+  .footer svg{
+    width: 50px;
+  }
+
+.copyright h3{
+    margin-left: 10px;
+  }
