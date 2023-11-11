@@ -21,6 +21,7 @@ import { ListComponent } from './components/list/list.component';
 import {MatTableModule} from "@angular/material/table";
 import { TrackerComponent } from './components/tracker/tracker.component';
 import { OrderdetailsComponent } from './components/orderdetails/orderdetails.component';
+import { OrderstatusComponent } from './components/orderstatus/orderstatus.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { OrderdetailsComponent } from './components/orderdetails/orderdetails.co
     SidebarComponent,
     ListComponent,
     TrackerComponent,
-    OrderdetailsComponent
+    OrderdetailsComponent,
+    OrderstatusComponent
   ],
   imports: [
     BrowserModule,

@@ -122,14 +122,79 @@ li a{
     line-height: normal;
     letter-spacing: 3px;
   }
+
+
 .devs_container{
   background: hsl(256, 14%, 15%);
   margin-left: 25px;
   margin-right: 25px;
 }
+  .devs_container img{
+    margin-top: 10px;
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 556px;
+  }
+  .devs_container h4{
+    margin-top: 10px;
+  }
+
 .devs_container2{
   background: hsl(256, 14%, 15%);
   margin-top: 15px;
   margin-left: 15px;
   margin-right: 15px;
 }
+.devs_container2 img{
+  margin-top: 10px;
+  height: 200px;
+  flex-shrink: 0;
+  border-radius: 556px;
+}
+.devs_container2 h4{
+  margin-top: 10px;
+}
+
+.atendimento{}
+  .atendimento h2{
+    color: #FFF;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3px;
+  }
+
+.atendimento_container{
+  margin-top: 25px;
+  background: hsl(256, 14%, 15%);
+}
+
+
+.footer{
+  margin-top: 30px;
+  background-color: #918f8f;
+}
+  .footer h4{
+    font-size: 19px;
+    color: #D61D1D;
+    font-style: normal;
+    line-height: normal;
+  }
+
+  .footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-style: normal;
+    line-height: normal;
+  }
+
+  .footer svg{
+    width: 50px;
+  }
+
+.copyright h3{
+    margin-left: 10px;
+  }

@@ -13,11 +13,10 @@
     z-index: -1;
     background-size: cover;
   }
-  .orderdetails-form{
-    width: min(90%, 600px);
-    background: linear-gradient(rgba(141, 119, 132, 0), var(--custom-dark-blue));
+  .status-form{
+    background: linear-gradient(rgba(173, 83, 137, 0), var(--custom-dark-blue));
   }
-  .orderdetails-button{
+  .status-button{
     transition: 0.3s all;
     outline: none;
     &:hover{
@@ -26,14 +25,14 @@
     }
   }
 
-.gps img{
-  width: 250px;
-}
+.status{
 
-.orderdetails p{
-  font-size: 15px;
 }
-.orderdetails h2{
-  font-size: 20px;
-  font-style: bold;
+.status svg{
+  width: 80px;
 }
+  .status p{
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+  }

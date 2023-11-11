@@ -5,6 +5,7 @@ import {LandingPageComponent} from "./routes/landing-page/landing-page.component
 import {ManagementComponent} from "./routes/management/management.component";
 import { TrackerComponent } from './components/tracker/tracker.component';
 import { OrderdetailsComponent } from './components/orderdetails/orderdetails.component';
+import { OrderstatusComponent } from './components/orderstatus/orderstatus.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path: 'login', component: LoginScreenComponent},
   {path: 'tracker', component: TrackerComponent},
   {path: 'orderdetails', component: OrderdetailsComponent},
+  {path: 'orderstatus', component: OrderstatusComponent},
 ];
 
 @NgModule({
