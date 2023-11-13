@@ -178,7 +178,15 @@ li a{
   margin-top: 10px;
 }
 
-.atendimento{}
+
+.devs_container img:hover{
+  transform: scale(1.1);
+}
+.devs_container2 img:hover{
+  transform: scale(1.1);
+}
+.atendimento{
+}
   .atendimento h2{
     color: #FFF;
     text-align: center;
@@ -192,9 +200,12 @@ li a{
 .atendimento_container{
   margin-top: 25px;
   background: hsl(256, 14%, 15%);
+
 }
-
-
+.atendimento h4:hover{
+  transition: color 1s ease;
+  color: red;
+}
 .footer{
   margin-top: 30px;
   //background-color: #918f8f;
@@ -215,6 +226,15 @@ li a{
 
   .footer svg{
     width: 50px;
+  }
+
+  .footer a:hover{
+    color: red;
+    transform: scale(1.2);
+  }
+
+  .footer svg:hover{
+    transform: scale(1.2);
   }
 
 .copyright h3{
